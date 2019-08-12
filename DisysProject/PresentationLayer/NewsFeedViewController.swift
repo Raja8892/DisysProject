@@ -48,6 +48,9 @@ class NewsFeedViewController: UIViewController {
             if !newsFeedsData.payload.isEmpty{
                 self.newsFeedsData = newsFeedsData
                 self.reloadTableView()
+            }else{
+                self.showAlert(With: "Service Error", message: response?["message"] as! String)
+                self.activityIndicator.stopAnimating()
             }
             
         }) { (error) in
@@ -70,6 +73,13 @@ class NewsFeedViewController: UIViewController {
         self.newsFeedTableView.reloadData()
         self.activityIndicator.isHidden = true
         self.activityIndicator.stopAnimating()
+    }
+    
+    func showAlert(With titleMsg:String, message:String){
+        
+        let alertErrorMsg = UIAlertController.init(title: titleMsg, message: message, preferredStyle: UIAlertController.Style.alert)
+        alertErrorMsg.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(alertErrorMsg, animated: true)
     }
 }
 
