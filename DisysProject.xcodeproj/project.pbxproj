@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		148A5B4423013BA600BC015D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A5B4323013BA600BC015D /* AppDelegate.swift */; };
+		148A5B4923013BA600BC015D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148A5B4723013BA600BC015D /* Main.storyboard */; };
+		148A5B4B23013BA700BC015D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148A5B4A23013BA700BC015D /* Assets.xcassets */; };
+		148A5B4E23013BA700BC015D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148A5B4C23013BA700BC015D /* LaunchScreen.storyboard */; };
+		148A5B5923013BA800BC015D /* DisysProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A5B5823013BA800BC015D /* DisysProjectTests.swift */; };
+		148A5B69230143C300BC015D /* DisysConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A5B68230143C300BC015D /* DisysConstant.swift */; };
+		148A5B6B230143E600BC015D /* DisysServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A5B6A230143E600BC015D /* DisysServiceHandler.swift */; };
+		148A5B6D2301442300BC015D /* NewsFeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A5B6C2301442300BC015D /* NewsFeeds.swift */; };
+		148A5B6F2301566900BC015D /* NewsFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A5B6E2301566900BC015D /* NewsFeedTableViewCell.swift */; };
+		148A5B712301590100BC015D /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A5B702301590100BC015D /* NewsFeedViewController.swift */; };
+		148A5B7323017CFD00BC015D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A5B7223017CFD00BC015D /* LoginViewController.swift */; };
+		AA699FEBF0EAE352799B4B15 /* Pods_DisysProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0221833ABF1A5F742C34C2 /* Pods_DisysProjectTests.framework */; };
+		D5EE8B993AF1AE30915C00F0 /* Pods_DisysProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1B389A324D07BC25456306 /* Pods_DisysProject.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		148A5B5523013BA800BC015D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 148A5B3823013BA600BC015D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 148A5B3F23013BA600BC015D;
+			remoteInfo = DisysProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		105260BD4A1F7ADD29EE4DCA /* Pods-DisysProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisysProjectTests.release.xcconfig"; path = "Target Support Files/Pods-DisysProjectTests/Pods-DisysProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		148A5B4023013BA600BC015D /* DisysProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisysProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		148A5B4323013BA600BC015D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		148A5B4823013BA600BC015D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		148A5B4A23013BA700BC015D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		148A5B4D23013BA700BC015D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		148A5B4F23013BA700BC015D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		148A5B5423013BA800BC015D /* DisysProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisysProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		148A5B5823013BA800BC015D /* DisysProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisysProjectTests.swift; sourceTree = "<group>"; };
+		148A5B5A23013BA800BC015D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		148A5B68230143C300BC015D /* DisysConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisysConstant.swift; sourceTree = "<group>"; };
+		148A5B6A230143E600BC015D /* DisysServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisysServiceHandler.swift; sourceTree = "<group>"; };
+		148A5B6C2301442300BC015D /* NewsFeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeeds.swift; sourceTree = "<group>"; };
+		148A5B6E2301566900BC015D /* NewsFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedTableViewCell.swift; sourceTree = "<group>"; };
+		148A5B702301590100BC015D /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		148A5B7223017CFD00BC015D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2C08537D4704C9BA044DB874 /* Pods-DisysProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisysProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-DisysProjectTests/Pods-DisysProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F0221833ABF1A5F742C34C2 /* Pods_DisysProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisysProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E1B389A324D07BC25456306 /* Pods_DisysProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisysProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A473623D3612FB5906F68D12 /* Pods-DisysProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisysProject.debug.xcconfig"; path = "Target Support Files/Pods-DisysProject/Pods-DisysProject.debug.xcconfig"; sourceTree = "<group>"; };
+		AA8FF9E368E9FB44757BFF6A /* Pods-DisysProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisysProject.release.xcconfig"; path = "Target Support Files/Pods-DisysProject/Pods-DisysProject.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		148A5B3D23013BA600BC015D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5EE8B993AF1AE30915C00F0 /* Pods_DisysProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		148A5B5123013BA800BC015D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA699FEBF0EAE352799B4B15 /* Pods_DisysProjectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		148A5B3723013BA600BC015D = {
+			isa = PBXGroup;
+			children = (
+				148A5B4223013BA600BC015D /* DisysProject */,
+				148A5B5723013BA800BC015D /* DisysProjectTests */,
+				148A5B4123013BA600BC015D /* Products */,
+				5F47E8FD7079C3DE47287215 /* Pods */,
+				8D9E40DCF761BF4EA200CB34 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		148A5B4123013BA600BC015D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				148A5B4023013BA600BC015D /* DisysProject.app */,
+				148A5B5423013BA800BC015D /* DisysProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		148A5B4223013BA600BC015D /* DisysProject */ = {
+			isa = PBXGroup;
+			children = (
+				148A5B662301437500BC015D /* PresentationLayer */,
+				148A5B672301438200BC015D /* Models */,
+				148A5B652301436B00BC015D /* NetworkManager */,
+				148A5B4323013BA600BC015D /* AppDelegate.swift */,
+				148A5B4723013BA600BC015D /* Main.storyboard */,
+				148A5B4A23013BA700BC015D /* Assets.xcassets */,
+				148A5B4C23013BA700BC015D /* LaunchScreen.storyboard */,
+				148A5B4F23013BA700BC015D /* Info.plist */,
+				148A5B68230143C300BC015D /* DisysConstant.swift */,
+			);
+			path = DisysProject;
+			sourceTree = "<group>";
+		};
+		148A5B5723013BA800BC015D /* DisysProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				148A5B5823013BA800BC015D /* DisysProjectTests.swift */,
+				148A5B5A23013BA800BC015D /* Info.plist */,
+			);
+			path = DisysProjectTests;
+			sourceTree = "<group>";
+		};
+		148A5B652301436B00BC015D /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				148A5B6A230143E600BC015D /* DisysServiceHandler.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		148A5B662301437500BC015D /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				148A5B7223017CFD00BC015D /* LoginViewController.swift */,
+				148A5B702301590100BC015D /* NewsFeedViewController.swift */,
+				148A5B6E2301566900BC015D /* NewsFeedTableViewCell.swift */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		148A5B672301438200BC015D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				148A5B6C2301442300BC015D /* NewsFeeds.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5F47E8FD7079C3DE47287215 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A473623D3612FB5906F68D12 /* Pods-DisysProject.debug.xcconfig */,
+				AA8FF9E368E9FB44757BFF6A /* Pods-DisysProject.release.xcconfig */,
+				2C08537D4704C9BA044DB874 /* Pods-DisysProjectTests.debug.xcconfig */,
+				105260BD4A1F7ADD29EE4DCA /* Pods-DisysProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D9E40DCF761BF4EA200CB34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E1B389A324D07BC25456306 /* Pods_DisysProject.framework */,
+				3F0221833ABF1A5F742C34C2 /* Pods_DisysProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		148A5B3F23013BA600BC015D /* DisysProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 148A5B5D23013BA800BC015D /* Build configuration list for PBXNativeTarget "DisysProject" */;
+			buildPhases = (
+				34EB0C785F4D9B42141508D2 /* [CP] Check Pods Manifest.lock */,
+				148A5B3C23013BA600BC015D /* Sources */,
+				148A5B3D23013BA600BC015D /* Frameworks */,
+				148A5B3E23013BA600BC015D /* Resources */,
+				06264AF4FDCEE1BB34C0D447 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DisysProject;
+			productName = DisysProject;
+			productReference = 148A5B4023013BA600BC015D /* DisysProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		148A5B5323013BA800BC015D /* DisysProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 148A5B6023013BA800BC015D /* Build configuration list for PBXNativeTarget "DisysProjectTests" */;
+			buildPhases = (
+				6C8858BBE3D98DC9C14BB6F2 /* [CP] Check Pods Manifest.lock */,
+				148A5B5023013BA800BC015D /* Sources */,
+				148A5B5123013BA800BC015D /* Frameworks */,
+				148A5B5223013BA800BC015D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				148A5B5623013BA800BC015D /* PBXTargetDependency */,
+			);
+			name = DisysProjectTests;
+			productName = DisysProjectTests;
+			productReference = 148A5B5423013BA800BC015D /* DisysProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		148A5B3823013BA600BC015D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Raja Inbam";
+				TargetAttributes = {
+					148A5B3F23013BA600BC015D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					148A5B5323013BA800BC015D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 148A5B3F23013BA600BC015D;
+					};
+				};
+			};
+			buildConfigurationList = 148A5B3B23013BA600BC015D /* Build configuration list for PBXProject "DisysProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 148A5B3723013BA600BC015D;
+			productRefGroup = 148A5B4123013BA600BC015D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				148A5B3F23013BA600BC015D /* DisysProject */,
+				148A5B5323013BA800BC015D /* DisysProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		148A5B3E23013BA600BC015D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148A5B4E23013BA700BC015D /* LaunchScreen.storyboard in Resources */,
+				148A5B4B23013BA700BC015D /* Assets.xcassets in Resources */,
+				148A5B4923013BA600BC015D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		148A5B5223013BA800BC015D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06264AF4FDCEE1BB34C0D447 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DisysProject/Pods-DisysProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DisysProject/Pods-DisysProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34EB0C785F4D9B42141508D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DisysProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C8858BBE3D98DC9C14BB6F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DisysProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		148A5B3C23013BA600BC015D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148A5B6D2301442300BC015D /* NewsFeeds.swift in Sources */,
+				148A5B69230143C300BC015D /* DisysConstant.swift in Sources */,
+				148A5B6F2301566900BC015D /* NewsFeedTableViewCell.swift in Sources */,
+				148A5B7323017CFD00BC015D /* LoginViewController.swift in Sources */,
+				148A5B4423013BA600BC015D /* AppDelegate.swift in Sources */,
+				148A5B6B230143E600BC015D /* DisysServiceHandler.swift in Sources */,
+				148A5B712301590100BC015D /* NewsFeedViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		148A5B5023013BA800BC015D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148A5B5923013BA800BC015D /* DisysProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		148A5B5623013BA800BC015D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 148A5B3F23013BA600BC015D /* DisysProject */;
+			targetProxy = 148A5B5523013BA800BC015D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		148A5B4723013BA600BC015D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				148A5B4823013BA600BC015D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		148A5B4C23013BA700BC015D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				148A5B4D23013BA700BC015D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		148A5B5B23013BA800BC015D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		148A5B5C23013BA800BC015D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		148A5B5E23013BA800BC015D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A473623D3612FB5906F68D12 /* Pods-DisysProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DisysProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DisysProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		148A5B5F23013BA800BC015D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA8FF9E368E9FB44757BFF6A /* Pods-DisysProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DisysProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DisysProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		148A5B6123013BA800BC015D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C08537D4704C9BA044DB874 /* Pods-DisysProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DisysProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DisysProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DisysProject.app/DisysProject";
+			};
+			name = Debug;
+		};
+		148A5B6223013BA800BC015D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 105260BD4A1F7ADD29EE4DCA /* Pods-DisysProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DisysProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DisysProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DisysProject.app/DisysProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		148A5B3B23013BA600BC015D /* Build configuration list for PBXProject "DisysProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148A5B5B23013BA800BC015D /* Debug */,
+				148A5B5C23013BA800BC015D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		148A5B5D23013BA800BC015D /* Build configuration list for PBXNativeTarget "DisysProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148A5B5E23013BA800BC015D /* Debug */,
+				148A5B5F23013BA800BC015D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		148A5B6023013BA800BC015D /* Build configuration list for PBXNativeTarget "DisysProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148A5B6123013BA800BC015D /* Debug */,
+				148A5B6223013BA800BC015D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 148A5B3823013BA600BC015D /* Project object */;
+}
